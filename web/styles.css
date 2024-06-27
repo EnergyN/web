@@ -1,0 +1,117 @@
+body {
+    background: #1d1f21;
+    color: #c5c8c6;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ustawienie pionowego układu elementów */
+  z-index: 9999; /* Wysoki indeks z-index, aby był na wierzchu */
+}
+
+.loader {
+  width: 50%;
+  max-width: 300px; /* Maksymalna szerokość ładowarki */
+  background-color: rgba(255, 255, 255, 0.2); /* Kolor tła ładowarki */
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Ustawienie pionowego układu elementów */
+  align-items: center;
+  padding: 20px;
+}
+
+.loading-text {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.loader-bar {
+  width: 0%;
+  height: 20px; /* Wysokość paska ładowania */
+  background-color: limegreen; /* Kolor paska ładowania (zielony) */
+  transition: width 1s ease; /* Animacja przejścia */
+}
+.logo-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* You can adjust this value based on how large you want the logo to appear */
+}
+
+.terminal {
+    background: #282a2e;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.output {
+    white-space: pre-wrap;
+    overflow-y: auto;
+    max-height: 400px;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background: #373b41;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 0 0 20px;
+}
+
+.button {
+    background: #81a2be;
+    color: #1d1f21;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.button:hover {
+    background: #8abbd8;
+}

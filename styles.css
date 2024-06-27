@@ -1,0 +1,55 @@
+body {
+    background: #1d1f21;
+    color: #c5c8c6;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* You can adjust this value based on how large you want the logo to appear */
+}
+
+.terminal {
+    background: #282a2e;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.output {
+    white-space: pre-wrap;
+    overflow-y: auto;
+    max-height: 400px;
+    margin-bottom: 10px;
+}
+
+.input-line {
+    display: flex;
+}
+
+.prompt {
+    margin-right: 10px;
+}
+
+input {
+    background: none;
+    border: none;
+    color: #c5c8c6;
+    flex-grow: 1;
+    outline: none;
+    font-size: 1em;
+}
